@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J Rocks Smoke House | Authentic BBQ & Soul Food in Downtown Topeka, KS</title>
+    <meta name="description" content="Come savor the flavor at J Rocks Smoke House in Downtown Topeka! Fall-off-the-bone ribs, burnt ends, fried catfish, wings, and homestyle soul food sides.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ember: '#D94E1F',
+                        smoke: '#141210',
+                        charcoal: '#1F1C18',
+                        gold: '#F59E0B',
+                        cream: '#FAF6F0'
+                    },
+                    fontFamily: {
+                        display: ['Oswald', 'sans-serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(rgba(20, 18, 16, 0.78), rgba(20, 18, 16, 0.92)),
+                        url('https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+        }
+    </style>
+</head>
+<body class="bg-smoke text-cream font-sans antialiased selection:bg-ember selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-ember text-white text-xs sm:text-sm py-2.5 px-4 text-center font-medium">
+        <div class="max-w-6xl mx-auto flex flex-wrap justify-center items-center gap-2 sm:gap-6">
+            <span><i class="fa-solid fa-fire-flame-curved mr-1"></i> <strong>NEW DOWNTOWN LOCATION:</strong> 1003 SE Quincy St, Topeka, KS 66612</span>
+            <span id="open-status-badge" class="bg-black/30 px-2.5 py-0.5 rounded-full text-xs font-bold tracking-wide uppercase">
+                Checking Hours...
+            </span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-smoke/95 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-lg bg-ember flex items-center justify-center text-white font-display font-bold text-2xl shadow-lg shadow-ember/30">
+                    JR
+                </div>
+                <div>
+                    <span class="font-display text-xl sm:text-2xl font-bold tracking-wider uppercase block leading-none">J Rocks Smoke House</span>
+                    <span class="text-xs text-gold tracking-widest uppercase font-semibold">BBQ & Soul Food • Topeka, KS</span>
+                </div>
+            </a>
+
+            <!-- Desktop Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-300">
+                <a href="#menu" class="hover:text-gold transition">Menu</a>
+                <a href="#story" class="hover:text-gold transition">Our Story</a>
+                <a href="#reviews" class="hover:text-gold transition">Reviews</a>
+                <a href="#location" class="hover:text-gold transition">Hours & Location</a>
+            </nav>
+
+            <!-- CTA Buttons -->
+            <div class="flex items-center gap-3">
+                <a href="tel:7853295648" class="hidden sm:inline-flex items-center gap-2 border border-white/20 hover:border-gold text-cream px-4 py-2.5 rounded-lg text-sm font-bold transition">
+                    <i class="fa-solid fa-phone text-gold"></i> (785) 329-5648
+                </a>
+                <a href="https://www.doordash.com/store/j-rocks-smoke-house-topeka-36037159/" target="_blank" rel="noopener" class="bg-ember hover:bg-orange-600 text-white px-4 py-2.5 rounded-lg text-sm font-bold transition shadow-lg shadow-ember/25 flex items-center gap-2">
+                    <i class="fa-solid fa-bag-shopping"></i> <span>Order Online</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg py-20 sm:py-28 px-4 border-b border-white/10">
+        <div class="max-w-5xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 bg-white/10 border border-white/15 px-4 py-1.5 rounded-full text-gold text-xs sm:text-sm font-bold uppercase tracking-wider mb-6">
+                <i class="fa-solid fa-star"></i> 4.8★ Rated on DoorDash (300+ Reviews)
+            </div>
+            <h1 class="font-display text-5xl sm:text-7xl font-bold uppercase tracking-tight leading-none mb-6">
+                Smoky, Seasoned, <br><span class="text-ember">Fall-Off-The-Bone</span> Goodness
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+                From slow-smoked burnt ends and rib tips to crispy fried catfish, collard greens, and homemade desserts. Come hungry, leave full at Downtown Topeka's home for real barbecue and soul food.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#menu" class="w-full sm:w-auto bg-ember hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-xl text-lg transition shadow-xl shadow-ember/30 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-utensils"></i> Explore Full Menu
+                </a>
+                <a href="tel:7853295648" class="w-full sm:w-auto bg-charcoal hover:bg-white/10 border border-white/20 text-white font-bold px-8 py-4 rounded-xl text-lg transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-phone-volume text-gold"></i> Call In Order: (785) 329-5648
+                </a>
+            </div>
+
+            <!-- Highlights Row -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto mt-14 pt-10 border-t border-white/10 text-left">
+                <div class="bg-charcoal/80 p-4 rounded-xl border border-white/5">
+                    <i class="fa-solid fa-fire text-ember text-xl mb-2"></i>
+                    <h3 class="font-bold text-sm uppercase">Slow-Smoked Meats</h3>
+                    <p class="text-xs text-gray-400 mt-1">Burnt ends, ribs, brisket & rib tips smoked fresh daily.</p>
+                </div>
+                <div class="bg-charcoal/80 p-4 rounded-xl border border-white/5">
+                    <i class="fa-solid fa-bowl-food text-gold text-xl mb-2"></i>
+                    <h3 class="font-bold text-sm uppercase">Homestyle Sides</h3>
+                    <p class="text-xs text-gray-400 mt-1">Collard greens, mac & cheese, dirty rice & cornbread.</p>
+                </div>
+                <div class="bg-charcoal/80 p-4 rounded-xl border border-white/5">
+                    <i class="fa-solid fa-cake-candles text-ember text-xl mb-2"></i>
+                    <h3 class="font-bold text-sm uppercase">Daily Cakes & Cobbler</h3>
+                    <p class="text-xs text-gray-400 mt-1">Ask what homemade cake we have in the kitchen today!</p>
+                </div>
+                <div class="bg-charcoal/80 p-4 rounded-xl border border-white/5">
+                    <i class="fa-solid fa-truck-fast text-gold text-xl mb-2"></i>
+                    <h3 class="font-bold text-sm uppercase">Dine-In or Delivery</h3>
+                    <p class="text-xs text-gray-400 mt-1">Visit us on SE Quincy St or get delivery via DoorDash.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Special / Cake Callout Banner -->
+    <section class="bg-gradient-to-r from-amber-900/40 via-ember/30 to-amber-900/40 border-b border-white/10 py-6 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+            <div class="flex flex-col sm:flex-row items-center gap-4">
+                <span class="bg-gold text-smoke font-display font-bold uppercase px-3 py-1 rounded text-sm tracking-wider">Pitmaster's Note</span>
+                <p class="text-sm sm:text-base font-medium text-cream">
+                    <strong>"Don't forget to ask what CAKE we have today!"</strong> — Plus check Facebook for our daily lunch & dinner specials!
+                </p>
+            </div>
+            <a href="tel:7853295648" class="text-gold hover:underline text-sm font-bold whitespace-nowrap">
+                Ask About Today's Dessert <i class="fa-solid fa-arrow-right ml-1"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Interactive Menu Section -->
+    <section id="menu" class="py-20 px-4 max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+            <span class="text-ember font-bold uppercase tracking-widest text-xs">Come Savor The Flavor</span>
+            <h2 class="font-display text-4xl sm:text-5xl font-bold uppercase mt-2">Our Smokehouse Menu</h2>
+            <p class="text-gray-400 mt-3 max-w-xl mx-auto text-sm sm:text-base">
+                Seasoned to perfection and cooked with love. Available for dine-in, carryout, or DoorDash delivery.
+            </p>
+        </div>
+
+        <!-- Category Tabs -->
+        <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10" id="menu-tabs">
+            <button onclick="filterMenu('all')" class="menu-tab active bg-ember text-white px-5 py-2.5 rounded-full text-sm font-bold transition" data-category="all">
+                All Favorites
+            </button>
+            <button onclick="filterMenu('smoked')" class="menu-tab bg-charcoal hover:bg-white/10 text-gray-300 px-5 py-2.5 rounded-full text-sm font-bold transition" data-category="smoked">
+                🍖 Smoked Meats & BBQ
+            </button>
+            <button onclick="filterMenu('soul')" class="menu-tab bg-charcoal hover:bg-white/10 text-gray-300 px-5 py-2.5 rounded-full text-sm font-bold transition" data-category="soul">
+                🍗 Wings, Fish & Soul Food
+            </button>
+            <button onclick="filterMenu('sides')" class="menu-tab bg-charcoal hover:bg-white/10 text-gray-300 px-5 py-2.5 rounded-full text-sm font-bold transition" data-category="sides">
+                🥘 Homestyle Sides
+            </button>
+            <button onclick="filterMenu('desserts')" class="menu-tab bg-charcoal hover:bg-white/10 text-gray-300 px-5 py-2.5 rounded-full text-sm font-bold transition" data-category="desserts">
+                🍰 Desserts
+            </button>
+        </div>
+
+        <!-- Menu Grid -->
+        <div class="grid md:grid-cols-2 gap-6" id="menu-grid">
+            <!-- Smoked Meats -->
+            <div class="menu-item bg-charcoal border border-white/10 rounded-2xl p-6 flex justify-between gap-4 hover:border-ember/50 transition" data-category="smoked">
+                <div>
+                    <div class="flex items-center gap-2">
+                        <h3 class="font-bold text-lg text-white">Signature Burnt Ends</h3>
+                        <span class="bg-ember/20 text-ember text-xs px-2 py-0.5 rounded font-bold uppercase">Crowd Favorite</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mt-1">Juicy, tender, slow-smoked burnt ends so flavorful you don't even need sauce. Served with pickles.</p>
+                </div>
+                <span class="font-display font-bold text-xl text-gold whitespace-nowrap">$16.49</span>
+            </div>
+
+            <div class="menu-item bg-charcoal border border-white/10 rounded-2xl p-6 flex justify-between gap-4 hover:border-ember/50 transition" data-category="smoked">
+                <div>
+                    <div class="flex items-center gap-2">
+                        <h3 class="font-bold text-lg text-white">Smoked Rib Tips</h3>
+                        <span class="bg-gold/20 text-gold text-xs px-2 py-0.5 rounded font-bold uppercase">Popular</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mt-1">Meaty, smoky rib tips served with grilled onions, mustard, and cheese or classic BBQ style.</p>
+                </div>
+                <span class="font-display font-bold text-xl text-gold whitespace-nowrap">Market</span>
+            </div>
+
+            <div class="menu-item bg-charcoal border border-white/10 rounded-2xl p-6 flex justify-between gap-4 hover:border-ember/50 transition" data-category="smoked">
+                <div>
+                    <h3 class="font-bold text-lg text-white">Fall-Off-The-Bone St. Louis Ribs</h3>
+                    <p class="text-gray-400 text-sm mt-1">Slow-smoked with our signature dry rub until tender and clean off the bone. Available in generous dinner portions.</p>
+                </div>
+                <span class="font-display font-bold text-xl text-gold whitespace-nowrap">Market</span>
+            </div>
+
+            <div class="menu-item bg-charcoal border border-white/10 rounded-2xl p-6 flex justify-between gap-4 hover:border-ember/50 transition" data-category="smoked">
+                <div>
+                    <h3 class="font-bold text-lg text-white">Tip & Wing Combo Dinner</h3>
+                    <p class="text-gray-400 text-sm mt-1">The best of both worlds: tender smoked rib tips paired with our crispy seasoned chicken wings.</p>
+                </div>
+                <span class="font-display font-bold text-xl text-gold whitespace-nowrap">Combo</span>
+            </div>
+
+            <div class="menu-item bg-charcoal border border-white/10 rounded-2xl p-6 flex justify-between gap-4 hover:border-ember/50 transition" data-category="smoked">
+                <div>
+                    <h3 class="font-bold text-lg text-white">Smoked Pulled Pork Sandwich</h3>
+                    <p class="text-gray-400 text-sm mt-1">Piled high with tender slow-smoked pulled pork on a toasted bun. Fantastic paired with cheesy potatoes or fries.</p>
+                </div>
+                <span class="font-display font-bold text-xl text-gold whitespace-nowrap">Classic</span>
+            </div>
+
+            <!-- Soul Food, Fish & Wings -->
+            <div class="menu-item bg-charcoal border border-white/10 rounded-2xl p-6 flex justify-between gap-4 hover:border-ember/50 transition" data-category="soul">
+                <div>
+                    <div class="flex items-center gap-2">
+                        <h3 class="font-bold text-lg text-white">2 Pork Chops Dinner</h3>
+                        <span class="bg-ember/20 text-ember text-xs px-2 py-0.5 rounded font-bold uppercase">Top Rated</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mt-1">Two crispy, hot, well-seasoned full pork chops served with rich, flavorful gravy on the side, two sides, and cornbread.</p>
+                </div>
+                <span class="font-display font-bold text-xl text-gold whitespace-nowrap">Dinner</span>
+            </div>
+
+            <div class="menu-item bg-charcoal border border-white/10 rounded-2xl p-6 flex justify-between gap-4 hover:border-ember/50 transition" data-category="soul">
+                <div>
+                    <h3 class="font-bold text-lg text-white">Crispy Fried Catfish</h3>
+                    <p class="text-gray-400 text-sm mt-1">Golden-fried catfish fillets with light, crispy, well-seasoned breading cooked fresh to order.</p>
+                </div>
+                <span class="font-display font-bold text-xl text-gold whitespace-nowrap">Dinner</span>
+            </div>
+
+            <div class="menu-item bg-charcoal border border-white/10 rounded-2xl p-6 flex justify-between gap-4 hover:border-ember/50 transition" data-category="soul">
+                <div>
+                    <h3 class="font-bold text-lg text-white">Hot Honey Chicken & Party Wings</h3>
+                    <p class="text-gray-400 text-sm mt-1">Crispy fried chicken wings tossed in sweet & spicy hot honey with ranch, or seasoned original.</p>
+                </div>
+                <span class="font-display font-bold text-xl text-gold whitespace-nowrap">Popular</span>
+            </div>
+
+            <div class="menu-item bg-charcoal border border-white/10 rounded-2xl p-6 flex justify-between gap-4 hover:border-ember/50 transition" data-category="soul">
+                <div>
+                    <h3 class="font-bold text-lg text-white">Grilled Bone-In Pork Chop Sandwich</h3>
+                    <p class="text-gray-400 text-sm mt-1">A Topeka lunchtime legend! Seasoned bone-in pork chop sandwich served with crispy fries and a drink.</p>
+                </div>
+                <span class="font-display font-bold text-xl text-gold whitespace-nowrap">$11.99</span>
+            </div>
+
+            <!-- Homestyle Sides -->
+            <div class="menu-item bg-charcoal border border-white/10 rounded-2xl p-6 flex justify-between gap-4 hover:border-ember/50 transition" data-category="sides">
+                <div>
+                    <div class="flex items-center gap-2">
+                        <h3 class="font-bold text-lg text-white">Famous Collard Greens & Cornbread</h3>
+                        <span class="bg-gold/20 text-gold text-xs px-2 py-0.5 rounded font-bold uppercase">Must Try</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mt-1">Slow-simmered, deeply seasoned greens paired with our sweet, golden homemade corn muffins.</p>
+                </div>
+                <span class="font-display font-bold text-xl text-gold whitespace-nowrap">Side</span>
+            </div>
+
+            <div class="menu-item bg-charcoal border border-white/10 rounded-2xl p-6 flex justify-between gap-4 hover:border-ember/50 transition" data-category="sides">
+                <div>
+                    <h3 class="font-bold text-lg text-white">Smoky Meat Baked Beans</h3>
+                    <p class="text-gray-400 text-sm mt-1">The ideal balance of sweet and smoky with real chunks of smoked meat mixed right in.</p>
+                </div>
+                <span class="font-display font-bold text-xl text-gold whitespace-nowrap">Side</span>
+            </div>
+
+            <div class="menu-item bg-charcoal border border-white/10 rounded-2xl p-6 flex justify-between gap-4 hover:border-ember/50 transition" data-category="sides">
+                <div>
+                    <h3 class="font-bold text-lg text-white">Baked Mac & Cheese / Cheesy Potatoes</h3>
+                    <p class="text-gray-400 text-sm mt-1">Rich, comforting, and loaded with melted cheese—plus crispy fried okra, dirty rice, and seasoned green beans.</p>
+                </div>
+                <span class="font-display font-bold text-xl text-gold whitespace-nowrap">Side</span>
+            </div>
+
+            <!-- Desserts -->
+            <div class="menu-item bg-charcoal border border-white/10 rounded-2xl p-6 flex justify-between gap-4 hover:border-ember/50 transition" data-category="desserts">
+                <div>
+                    <h3 class="font-bold text-lg text-white">Homemade Southern Peach Cobbler</h3>
+                    <p class="text-gray-400 text-sm mt-1">Warm, sweet-tooth satisfying spiced peaches baked under a golden buttery crust.</p>
+                </div>
+                <span class="font-display font-bold text-xl text-gold whitespace-nowrap">Dessert</span>
+            </div>
+
+            <div class="menu-item bg-charcoal border border-white/10 rounded-2xl p-6 flex justify-between gap-4 hover:border-ember/50 transition" data-category="desserts">
+                <div>
+                    <h3 class="font-bold text-lg text-white">Daily Rotating Homemade Cakes</h3>
+                    <p class="text-gray-400 text-sm mt-1">Baked fresh! Call ahead or ask at the counter to see which homemade cake slices we're serving today.</p>
+                </div>
+                <span class="font-display font-bold text-xl text-gold whitespace-nowrap">Ask Us!</span>
+            </div>
+        </div>
+
+        <div class="mt-10 text-center">
+            <a href="https://www.doordash.com/store/j-rocks-smoke-house-topeka-36037159/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-white text-smoke hover:bg-gold font-bold px-7 py-3.5 rounded-xl transition">
+                <i class="fa-solid fa-motorcycle"></i> View Live Pricing & Order Delivery on DoorDash
+            </a>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section id="story" class="bg-charcoal border-y border-white/10 py-20 px-4">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-gold font-bold uppercase tracking-widest text-xs">Locally Owned & Family Operated</span>
+                <h2 class="font-display text-4xl font-bold uppercase mt-2 mb-6">From A Topeka Food Truck To Downtown Quincy Street</h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    Owned and operated by <strong>Richard and Jasmaine Harris</strong>, J Rocks Smoke House started with a simple mission: bring authentic, slow-smoked barbecue and real-deal soul food to the Topeka community.
+                </p>
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    After two years of serving loyal fans out of our food truck on SE 21st Street—rain, shine, or Kansas wind—we achieved our dream of opening our very first brick-and-mortar restaurant right in the heart of Downtown Topeka at <strong>1003 SE Quincy Street</strong>.
+                </p>
+                <div class="flex flex-wrap gap-6 pt-4 border-t border-white/10">
+                    <div>
+                        <span class="font-display text-3xl font-bold text-ember">300+</span>
+                        <p class="text-xs text-gray-400 uppercase tracking-wider">5-Star Delivery Ratings</p>
+                    </div>
+                    <div>
+                        <span class="font-display text-3xl font-bold text-gold">100%</span>
+                        <p class="text-xs text-gray-400 uppercase tracking-wider">Locally Owned in 785</p>
+                    </div>
+                    <div>
+                        <span class="font-display text-3xl font-bold text-ember">Fresh</span>
+                        <p class="text-xs text-gray-400 uppercase tracking-wider">Smoked Daily In-House</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=900&q=80" alt="Smoked BBQ Platter at J Rocks Smoke House" class="rounded-2xl shadow-2xl border border-white/10 w-full object-cover h-96">
+                <div class="absolute -bottom-5 -left-5 bg-ember text-white p-5 rounded-xl shadow-xl hidden sm:block">
+                    <p class="font-display font-bold text-lg uppercase">"Come Hungry… Leave FULL!"</p>
+                    <p class="text-xs text-white/90 mt-0.5">— Richard & Jasmaine Harris, Owners</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real Customer Reviews Section -->
+    <section id="reviews" class="py-20 px-4 max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+            <span class="text-ember font-bold uppercase tracking-widest text-xs">Word On The Street</span>
+            <h2 class="font-display text-4xl sm:text-5xl font-bold uppercase mt-2">What Topeka Is Saying</h2>
+            <p class="text-gray-400 mt-2 text-sm">Real reviews from our Topeka neighbors and regulars.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- Review 1 -->
+            <div class="bg-charcoal p-6 rounded-2xl border border-white/10 flex flex-col justify-between">
+                <div>
+                    <div class="flex text-gold text-sm mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-200 text-sm leading-relaxed italic">
+                        "Most consistent restaurant in town. 2 Pork Chops dinner: crispy, hot, fresh, well-seasoned full pork chops with flavorful gravy on the side. I cannot get enough of the greens & cornbread — taste like home!"
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-xs text-gray-400">
+                    <span class="font-bold text-white">Verified Topeka Customer</span>
+                    <span>Ordered 2 Pork Chops Dinner</span>
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="bg-charcoal p-6 rounded-2xl border border-white/10 flex flex-col justify-between">
+                <div>
+                    <div class="flex text-gold text-sm mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-200 text-sm leading-relaxed italic">
+                        "All the meats were cooked perfectly with the right amount of smoky flavor. The baked beans were so tasty and the Peach Cobbler was so sweet-tooth satisfying. I would totally order again!"
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-xs text-gray-400">
+                    <span class="font-bold text-white">Verified DoorDash Review</span>
+                    <span>Ordered BBQ & Peach Cobbler</span>
+                </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="bg-charcoal p-6 rounded-2xl border border-white/10 flex flex-col justify-between">
+                <div>
+                    <div class="flex text-gold text-sm mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-200 text-sm leading-relaxed italic">
+                        "Catfish breading was light and crispy and seasoned very well. Green beans were seasoned and tender. Dirty rice was fantastic. Best barbecue and soul food I've had for a very long time!"
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-xs text-gray-400">
+                    <span class="font-bold text-white">Verified Topeka Foodie</span>
+                    <span>Ordered Catfish & Sides</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Hours Section -->
+    <section id="location" class="bg-charcoal border-t border-white/10 py-20 px-4">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-start">
+            <div class="bg-smoke p-8 rounded-2xl border border-white/10">
+                <span class="text-ember font-bold uppercase tracking-widest text-xs">Find Us In Downtown Topeka</span>
+                <h2 class="font-display text-3xl sm:text-4xl font-bold uppercase mt-1 mb-6">Hours & Location</h2>
+
+                <div class="space-y-4 mb-8">
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-location-dot text-ember text-xl mt-1"></i>
+                        <div>
+                            <h3 class="font-bold text-white">Address</h3>
+                            <p class="text-gray-300 text-sm">1003 SE Quincy St, Topeka, KS 66612</p>
+                            <a href="https://maps.google.com/?q=1003+SE+Quincy+St,+Topeka,+KS+66612" target="_blank" rel="noopener" class="text-gold text-xs font-bold hover:underline inline-block mt-1">
+                                Get Directions on Google Maps →
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-phone text-ember text-xl mt-1"></i>
+                        <div>
+                            <h3 class="font-bold text-white">Phone (Call-In & Carryout)</h3>
+                            <a href="tel:7853295648" class="text-gray-300 hover:text-gold text-sm">(785) 329-5648</a>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="font-display text-xl font-bold uppercase mb-3 border-b border-white/10 pb-2">Smokehouse Hours</h3>
+                <ul class="space-y-2 text-sm">
+                    <li class="flex justify-between py-1 border-b border-white/5 text-gray-400">
+                        <span>Monday – Tuesday</span>
+                        <span class="font-semibold text-red-400">Closed</span>
+                    </li>
+                    <li class="flex justify-between py-1 border-b border-white/5">
+                        <span class="font-medium">Wednesday</span>
+                        <span class="font-bold text-gold">11:30 AM – 8:00 PM</span>
+                    </li>
+                    <li class="flex justify-between py-1 border-b border-white/5">
+                        <span class="font-medium">Thursday</span>
+                        <span class="font-bold text-gold">11:30 AM – 8:00 PM</span>
+                    </li>
+                    <li class="flex justify-between py-1 border-b border-white/5">
+                        <span class="font-medium">Friday</span>
+                        <span class="font-bold text-gold">11:30 AM – 8:00 PM</span>
+                    </li>
+                    <li class="flex justify-between py-1 border-b border-white/5">
+                        <span class="font-medium">Saturday</span>
+                        <span class="font-bold text-gold">11:30 AM – 8:00 PM</span>
+                    </li>
+                    <li class="flex justify-between py-1">
+                        <span class="font-medium">Sunday</span>
+                        <span class="font-bold text-gold">12:00 PM – 6:00 PM</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Interactive Map Embed -->
+            <div class="rounded-2xl overflow-hidden border border-white/10 h-96 md:h-full min-h-[380px]">
+                <iframe
+                    title="J Rocks Smoke House Map"
+                    src="https://www.google.com/maps?q=1003+SE+Quincy+St,+Topeka,+KS+66612&output=embed"
+                    width="100%"
+                    height="100%"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-smoke border-t border-white/10 py-10 px-4 text-center text-xs text-gray-400">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="font-bold text-white uppercase tracking-wider">J Rocks Smoke House LLC • 1003 SE Quincy St, Topeka, KS 66612</p>
+            <p>© 2026 J Rocks Smoke House. Proudly serving Downtown Topeka. Call <a href="tel:7853295648" class="text-gold hover:underline">(785) 329-5648</a>.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Menu Category Filtering
+        function filterMenu(category) {
+            const items = document.querySelectorAll('.menu-item');
+            const tabs = document.querySelectorAll('.menu-tab');
+
+            tabs.forEach(tab => {
+                if (tab.dataset.category === category) {
+                    tab.classList.remove('bg-charcoal', 'text-gray-300');
+                    tab.classList.add('bg-ember', 'text-white');
+                } else {
+                    tab.classList.remove('bg-ember', 'text-white');
+                    tab.classList.add('bg-charcoal', 'text-gray-300');
+                }
+            });
+
+            items.forEach(item => {
+                if (category === 'all' || item.dataset.category === category) {
+                    item.style.display = 'flex';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Dynamic Open/Closed Status Indicator
+        function updateOpenStatus() {
+            const badge = document.getElementById('open-status-badge');
+            const now = new Date();
+            const day = now.getDay(); // 0 = Sun, 1 = Mon, ..., 6 = Sat
+            const hours = now.getHours() + now.getMinutes() / 60;
+
+            let isOpen = false;
+            if (day >= 3 && day <= 6) { // Wed - Sat: 11:30 AM (11.5) to 8:00 PM (20.0)
+                isOpen = hours >= 11.5 && hours < 20;
+            } else if (day === 0) { // Sun: 12:00 PM (12.0) to 6:00 PM (18.0)
+                isOpen = hours >= 12 && hours < 18;
+            }
+
+            if (isOpen) {
+                badge.textContent = '● Open Now — Serving Until ' + (day === 0 ? '6:00 PM' : '8:00 PM');
+                badge.className = 'bg-green-900/80 text-green-300 border border-green-500/40 px-3 py-0.5 rounded-full text-xs font-bold tracking-wide uppercase';
+            } else {
+                badge.textContent = '○ Currently Closed — Call or Check Hours Below';
+                badge.className = 'bg-black/40 text-amber-200 px-3 py-0.5 rounded-full text-xs font-bold tracking-wide uppercase';
+            }
+        }
+        updateOpenStatus();
+    </script>
+</body>
+</html>
